@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        .no-drop {
+            cursor: no-drop;
+        }
+
+        .text {
+            cursor: text;
+        }
+
+        .crosshair {
+            cursor: crosshair;
+        }
+    </style>
+
+    <link rel="stylesheet" href="fontselector.css">
+    <link rel="stylesheet" href="hw1.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="hw1.js"></script>
+    <script src="jscolor.js"></script>
+    <script src="jquery.fontselector.js"></script>
+</head>
+
+<body>
+
+    <body bgcolor="pink">
+        <!--<div style="border:5px black solid;">-->
+        <div id="canvasDiv">
+            <canvas id="canvas" width="1200" height="480" style="border:3px black ridge;"></canvas>
+        </div>
+        <div id="menu">
+            <font size="5" face="monospace"> Font: </font>
+            <div id="fontSelect" class="fontSelect">
+                <div class="arrow-down"></div>
+            </div>
+            <font size="5" face="monospace"> Color: </font>
+            <input class="jscolor" style="padding:7px;" value="000000" id="colorPicker" >
+            <font size="5" face="monospace"> Size: </font>
+            <input value="5" id="sizePicker" style="padding:7px;">
+            <p></p>
+            <button type="button" id="circle" style="border:3px black ridge;">
+                <img src="circle.png" style="width:80px;height:80px"> 
+                <font size="5" face="monospace"> Circle </font> 
+            </button>
+            <button type="button" id="square" style="border:3px black ridge;">
+                <img src="square.png" style="width:80px;height:80px"> 
+                <font size="5" face="monospace"> Square </font>  
+            </button>
+            <button type="button" id="eraser" style="border:3px black ridge;">
+                <img src="eraser.png" style="width:80px;height:80px">
+                <font size="5" face="monospace"> Eraser </font>
+            </button>
+            <button type="button" id="refresh" style="border:3px black ridge;">
+                <img src="refresh.png" style="width:80px;height:80px">  
+                <font size="5" face="monospace"> Refresh </font>
+            </button>
+            <button type="button" id="text" style="border:3px black ridge;">
+                <img src="text.png" style="width:80px;height:80px">
+                <font size="5" face="monospace"> Text </font>
+            </button>
+            <button type="button" id="undo" style="border:3px black ridge;">
+                <img src="undo.png" style="width:80px;height:80px"> 
+                <font size="5" face="monospace"> UnDo </font>    
+            </button>
+            <button type="button" id="redo" style="border:3px black ridge;">
+                <img src="redo.png" style="width:80px;height:80px">
+                <font size="5" face="monospace"> ReDo </font>
+            </button>
+        </div>
+
+    </body>
+
+</html>
