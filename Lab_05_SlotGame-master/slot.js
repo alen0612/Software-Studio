@@ -49,6 +49,7 @@ $(document).ready(function() {
 
     // Start slot machine
     Slot.prototype.start = function() {
+        console.log("start");
 
         // Make item move
         $(this.domObj).spStart();
@@ -65,6 +66,7 @@ $(document).ready(function() {
 
     // Stop a slot
     Slot.prototype.stop = function() {
+        console.log("stop");
         var _this = this,
             limit = 30;
         clearInterval(_this.si);
@@ -185,7 +187,9 @@ $(document).ready(function() {
         } else if(this.innerHTML == "Stop") {
             /// Stop action (ToDo 5-1)
             //
-
+            a.stop();
+            b.stop();
+            c.stop();
             //
             this.innerHTML = "Reset";
 
@@ -199,7 +203,9 @@ $(document).ready(function() {
         } else { //reset
             /// Reset action (ToDo 5-1)
             //
-
+            a.reset();
+            b.reset();
+            c.reset();
             //
             this.innerHTML = "Start";
         }
